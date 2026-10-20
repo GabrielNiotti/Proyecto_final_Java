@@ -1,0 +1,42 @@
+### Variables Globales
+@host = http://localhost:8080
+
+### 1. Listar todos los productos
+GET {{host}}/producto
+Accept: application/json
+
+### 2. Crear una nueva Crema
+POST {{host}}/producto
+Content-Type: application/json
+
+{
+  "categoria": "crema",
+  "nombre": "Crema Hidratante Facial",
+  "precio": 4500.0,
+  "stock": 15,
+  "tipoPiel": "Mixta"
+}
+
+### 3. Crear un nuevo Perfume
+POST {{host}}/producto
+Content-Type: application/json
+
+{
+  "categoria": "perfume",
+  "nombre": "Acqua di Gio",
+  "precio": 85000.0,
+  "stock": 8,
+  "genero": "Masculino"
+}
+
+### 4. Crear un nuevo Shampoo
+POST {{host}}/producto
+Content-Type: application/json
+
+{
+  "categoria": "shampoo",
+  "nombre": "Shampoo Anticaída Anticaspa",
+  "precio": 3200.0,
+  "stock": 20,
+  "tipoCabello": "Graso"
+}
